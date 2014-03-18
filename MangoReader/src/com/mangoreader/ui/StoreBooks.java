@@ -404,8 +404,6 @@ public class StoreBooks extends Activity implements HttpResponseHandler, OnItemC
 					bookdata.setCat(cat);
 					
 					
-					
-					
 					Log.e("cat array length",""+cat.length);
 					
 			
