@@ -16,7 +16,7 @@
         android:icon="@drawable/appicon"
         android:label="@string/app_name" >
         <activity
-            android:name="com.mangoreader.ui.LoginScreen"
+            android:name="com.mangoreader.ui.GameScreen"
             android:label="@string/app_name"
             android:screenOrientation="landscape"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >

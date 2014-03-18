@@ -9,6 +9,7 @@ import java.io.FileReader;
 import java.io.IOException;
 
 import com.mangoreader.R;
+import com.mangoreader.data.GameParser;
 
 
 import android.annotation.SuppressLint;
@@ -47,6 +48,9 @@ public class GameScreen extends Activity {
 		   // 	String filestrinf = getFileAsString(f);
 			//view.loadData(filestrinf, "text/html; charset=UTF-8", null);
 			view.loadUrl("file:///"+string);
+			
+			GameParser parser =  new GameParser("52d0763269702d5fe1d82800", this);
+			//view.loadUrl("javascript:MangoGame.init("++")");
 		}
 		else
 		{
