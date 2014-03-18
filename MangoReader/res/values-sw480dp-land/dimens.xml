@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="grid_item_size">100dp</dimen>
+    <dimen name="grid_item_icon_size">60dp</dimen>
+    <dimen name="grid_item_text_view_size">36dp</dimen>
+    <dimen name="grid_item_margin_size">2dp</dimen>
+    <dimen name="grid_item_full_size">90dp</dimen>
+    <dimen name="grid_item_bottom_line_size">2dp</dimen>
+    <dimen name="coverflow_item">160dp</dimen>
+     <dimen name="coverflow_item_w">230dp</dimen>
+      <dimen name="coverflow_item_h">150dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">25dp</dimen>
+
+</resources>

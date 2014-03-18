@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white" >
+
+    <ImageView
+        android:id="@+id/closebutton"
+        android:layout_width="50dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="3dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/icons_close" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/lineview"
+        android:layout_marginRight="5dp"
+        android:src="@drawable/cover" />
+    
+    <ProgressBar 
+     android:id="@+id/progress_bar"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     style="@android:style/Widget.ProgressBar.Horizontal"
+     android:layout_alignLeft="@id/image"
+     android:layout_alignRight="@id/image"
+     android:layout_alignBottom="@id/image"
+     android:visibility="gone"
+     android:max="100"
+        />
+
+    <View
+        android:id="@+id/lineview"
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/bookname"
+        android:background="#FF0000FF" />
+
+    <TextView
+        android:id="@+id/bookname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+          android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:text="Book Details"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+    
+    <ScrollView 
+        android:id="@+id/scroll"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/image"
+        android:layout_below="@+id/lineview"
+        >
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        
+        android:textColor="@android:color/black"
+        android:textStyle="bold" />
+</ScrollView>
+    <View
+        android:id="@+id/lineviews"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/scroll"
+        android:layout_toRightOf="@+id/image"
+        android:background="#FF0000FF" />
+
+    <TextView
+        android:id="@+id/textcategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scroll"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/image"
+        android:background="#2E9AFE"
+        android:textColor="#610B0B" />
+
+    <TextView
+        android:id="@+id/textpagecount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scroll"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/textcategory"
+        android:background="#F4FA58"
+        android:textStyle="bold"
+        android:visibility="visible"
+        android:textColor="#610B0B" />
+
+    <TextView
+        android:id="@+id/textlanguages"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textpagecount"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/textcategory"
+        android:background="#CC66FF"
+        android:textStyle="bold"
+        android:textColor="#610B0B" />
+
+    <View
+        android:id="@+id/lineview2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/image"
+        android:background="#FF0000FF" />
+
+    <Button
+        android:id="@+id/dialogButtonOK"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineview2"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/icons_getitnow" />
+
+    <TextView
+        android:id="@+id/pricesdetail"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lineview2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/dialogButtonOK"
+        android:text="Price"
+        android:textColor="@android:color/black"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/pricetext"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@+id/pricesdetail"
+        android:text="$ 5"
+        android:textColor="#FE2E2E"
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+</RelativeLayout>

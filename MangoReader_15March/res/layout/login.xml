@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/abc" >
+
+    <RelativeLayout
+        android:id="@+id/relative"
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
+        android:background="#FAAC58" >
+
+        <EditText
+            android:id="@+id/edittextusername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:ems="10"
+            android:hint="Email Id"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/edittextpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/edittextusername"
+            android:layout_alignRight="@+id/edittextusername"
+            android:layout_below="@+id/edittextusername"
+            android:layout_marginTop="15dp"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="textPassword" >
+        </EditText>
+
+        <TextView
+            android:id="@+id/forgetpassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/edittextpassword"
+            android:layout_marginTop="4dip"
+            android:layout_marginRight="4dip"
+            android:text="Forgot your password?"
+            android:textColor="#013ADF"
+            android:textSize="15dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/relative"
+        android:layout_below="@+id/relative" 
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/signin"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_weight=".5"
+            android:src="@drawable/icon_signin" />
+
+        <ImageView
+            android:id="@+id/signup"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:layout_weight=".5"
+            android:src="@drawable/signupbutton" />
+    </LinearLayout>
+    
+    
+    
+
+    <ImageView
+        android:id="@+id/skip1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/relative"
+        android:background="@drawable/icon_skip_signin" />
+
+</RelativeLayout>

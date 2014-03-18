@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/section_background" >
+
+         <TextView
+            android:id="@+id/section_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+          
+           
+            android:paddingLeft="5dp"
+            android:text="Header"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:typeface="sans" >
+        </TextView> 
+        
+         <TextView
+            android:id="@+id/moretext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:visibility="gone"
+            android:layout_marginRight="10dp"
+            android:text="More"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:typeface="sans" >
+        </TextView> 
+        
+         
+         
+    </RelativeLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical" >
+
+        <LinearLayout
+            android:id="@+id/row_item"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:padding="10dp" >
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
